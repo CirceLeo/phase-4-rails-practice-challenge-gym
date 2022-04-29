@@ -64,10 +64,10 @@ Write migrations to create the following tables: -->
 
 A user should be able to:
 
-- **Create a new membership**
+<!-- - **Create a new membership** -->
 
-  - New membership require a gym_id, client_id, and membership charge.
-  - Validation: A client can have only one membership with gym
+  <!-- - New membership require a gym_id, client_id, and membership charge.
+  - Validation: A client can have only one membership with gym -->
 
 <!-- - **View one specific gym**
 
@@ -100,6 +100,6 @@ A user should be able to:
 
 ### Bonus
 
-- On client show route, send response that includes total amount for all
-  membership for that client.
+<!-- - On client show route, send response that includes total amount for all
+  membership for that client. -->
 - Create index and update routes for gym and client
