@@ -29,9 +29,9 @@ You will have three models (and their corresponding tables), `Gym`, `Client` and
 - A gym has many clients and has many memberships
 - A membership belongs to a gym and belongs to a client
 
-### Migrations
+<!-- ### Migrations
 
-Write migrations to create the following tables:
+Write migrations to create the following tables: -->
 
 **Gyms** Table:
 
@@ -69,10 +69,10 @@ A user should be able to:
   - New membership require a gym_id, client_id, and membership charge.
   - Validation: A client can have only one membership with gym
 
-- **View one specific gym**
+<!-- - **View one specific gym**
 
   - if `Gym` exists, return JSON data for the gym
-  - else return error with a status code
+  - else return error with a status code -->
 
 - **Delete a gym**
 
@@ -93,10 +93,10 @@ A user should be able to:
     }
     ```
 
-- **View one specific client**
-
+<!-- - **View one specific client** -->
+<!-- 
   - if `Client` exists, return JSON data for the Client
-  - else return error with a status code
+  - else return error with a status code -->
 
 ### Bonus
 
