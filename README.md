@@ -81,16 +81,16 @@ A user should be able to:
     to a `Gym`, so you need to delete the `Membership`s before the
     `Gym` can be deleted).
 
-    After deleting the `Gym`, return an _empty_ response body, along with the
-    appropriate HTTP status code.
+    <!-- After deleting the `Gym`, return an _empty_ response body, along with the
+    appropriate HTTP status code. -->
 
-    If the `Gym` does not exist, return the following JSON data, along with
+    <!-- If the `Gym` does not exist, return the following JSON data, along with
     the appropriate HTTP status code:
 
     ```json
     {
       "error": "Gym not found"
-    }
+    } -->
     ```
 
 <!-- - **View one specific client** -->

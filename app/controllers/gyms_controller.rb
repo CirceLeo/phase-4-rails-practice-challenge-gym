@@ -7,14 +7,18 @@ class GymsController < ApplicationController
     end
 
     def destroy
-        @gym.destroy
+        if @gym
+            @gym.destroy
+            render json: {}, status: :accepted
+        else
+            render json: {error: "Gym not found"}, status: 404
+        end
         # head :no_content
-        render json: {}, status: :accepted
     end
 
     private
     def find_gym
-        @gym = Gym.find(params[:id])
+        Gym.find(params[:id])
     end
     
     def render_not_found
