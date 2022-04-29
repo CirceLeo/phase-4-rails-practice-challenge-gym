@@ -5,7 +5,9 @@ class MembershipsController < ApplicationController
         render json: membership, status: :created
     end
 
-    
+    def index
+        render json: Membership.all
+    end
 
     private
     def member_params

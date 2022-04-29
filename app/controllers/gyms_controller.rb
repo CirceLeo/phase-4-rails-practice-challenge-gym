@@ -1,13 +1,14 @@
 class GymsController < ApplicationController
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found
-    before_action :find_gym, only: [:show, :delete, :update]
+    before_action :find_gym, only: [:show, :destroy, :update]
 
     def show
-        render json: @gym
+        gym = Gym.find(params[:id])
+        render json:gym
     end
 
     def index
-        render json: Gym.all
+        render json: Gym.all, include: :memberships
     end
 
     def update
@@ -27,7 +28,7 @@ class GymsController < ApplicationController
 
     private
     def find_gym
-        Gym.find(params[:id])
+        @gym = Gym.find(params[:id])
     end
 
     def gym_params

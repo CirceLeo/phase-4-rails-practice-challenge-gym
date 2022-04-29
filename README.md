@@ -76,10 +76,10 @@ A user should be able to:
 
 - **Delete a gym**
 
-  - If the `Gym` exists, it should be removed from the database, along with
+  <!-- - If the `Gym` exists, it should be removed from the database, along with
     any `Membership`s that are associated with it (a `Membership` belongs
     to a `Gym`, so you need to delete the `Membership`s before the
-    `Gym` can be deleted).
+    `Gym` can be deleted). -->
 
     <!-- After deleting the `Gym`, return an _empty_ response body, along with the
     appropriate HTTP status code. -->
@@ -102,4 +102,4 @@ A user should be able to:
 
 <!-- - On client show route, send response that includes total amount for all
   membership for that client. -->
-- Create index and update routes for gym and client
+<!-- - Create index and update routes for gym and client -->
